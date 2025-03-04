@@ -15,12 +15,12 @@ body {
     background-image: repeating-linear-gradient(45deg, #f74545 25%, transparent 25%, transparent 75%, #f74545 75%, #f74545), repeating-linear-gradient(45deg, #f74545 25%, #e5e5f7 25%, #e5e5f7 75%, #f74545 75%, #f74545);
     background-position: 0 0, 10px 10px;
     background-size: 20px 20px;
-    padding: 80px; /*this seems to be the overlapping element*/
+    padding: 80px; /*this seems to be the overlapping element (was not this)*/
     border-radius: 10px;
     width: 80%;
     display: flex; /* Grid is multiple lines and flex is for one line*/
     justify-content: space-around;
-    align-items: center;
+    align-items: center; /*Difficult to fix code like this if you do not know exactly how it should be set out to achieve that look, the first place to start would be how to achieve that look from scratch maybe*/
   }
   
   .pastry {
@@ -28,7 +28,7 @@ body {
     padding: 20px;
     border-radius: 50%;
     font-size: 18px;
-  }
+  } /* Removed position: absolute*/
   
   .pastry img {
     width: 50px;
